@@ -41,6 +41,16 @@ module.exports = {
         ],
         dsl: 'less'
     },
+    matt: {
+        area: 'frontend',
+        name: 'pixlking/matt',
+        locale: 'es_AR',
+        files: [
+            'css/styles-m',
+            'css/styles-l'
+        ],
+        dsl: 'less'
+    },
     backend: {
         area: 'adminhtml',
         name: 'Magento/backend',
