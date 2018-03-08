@@ -10,6 +10,9 @@ Proyecto para customizar completamente un magento2
 ### Bajar magento 2 CE:
 + `composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition NOMBRE-PROYECTO`
 
+### Ver el memory_limit del php que esta tomando la consola cli, hay que setearle 2000M en el php.ini que este usando la cli:
++ `php -r "echo ini_get('memory_limit').PHP_EOL;"`
+
 ### Instalar magento por consola *(despues de haberlo bajado)*:
 + `php bin/magento setup:install --admin-firstname=TUNOMBRE --admin-lastname=TUAPELLIDO --admin-email=TUMAILPARALOGUEARTEALADMIN --admin-user=ADMINUSER --admin-password=PASSWORD --base-url=http://localhost/NOMBREPROYECTO/ --db-host=localhost --db-name=BASEDEDATOS --db-user=root --db-password=TUPASSDEPHPMYADMIN --language=es_AR --currency=ARS --timezone=America/Argentina/Buenos_Aires --use-rewrites=1`
 
